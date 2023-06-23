@@ -18,9 +18,10 @@ Experience the joy of cooking with GroceryPro, your ultimate kitchen companion. 
 
 - Hosted on vercel
 
-  Design: Refer to "Project Development Process - Grocery Pro" for designs.
+  Design: Refer to "Project Development Process - Grocery Pro" for more designs.
 <img width="1512" alt="Screenshot 2023-06-23 at 5 51 55 PM" src="https://github.com/GonelaD/RecipePro/assets/34701091/d6b43d7b-3781-40c4-a1aa-1268e04f41fb">
 
+<img width="1506" alt="Screenshot 2023-06-23 at 6 02 12 PM" src="https://github.com/GonelaD/RecipePro/assets/34701091/282f465b-d327-4198-801a-dadcdc449795">
 
 
 
