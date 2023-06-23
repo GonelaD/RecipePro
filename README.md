@@ -18,12 +18,10 @@ Experience the joy of cooking with GroceryPro, your ultimate kitchen companion. 
 
 - Hosted on vercel
 
-How to Run on Local:
+  Design: Refer to "Project Development Process - Grocery Pro" for designs.
+<img width="1512" alt="Screenshot 2023-06-23 at 5 51 55 PM" src="https://github.com/GonelaD/RecipePro/assets/34701091/d6b43d7b-3781-40c4-a1aa-1268e04f41fb">
 
-Clone the repository.
-Navigate to the repository and run "npm install"
-Run "npm start"
-The website will run on "localhost:3000"
+
 
 
 Development:
@@ -50,6 +48,13 @@ Automated Testing: Unit testing using jest. Please note that, because this is a 
 Future Ideas:
 
 To add more features, better UI to handle more functionality.
+
+How to Run on Local:
+
+Clone the repository.
+Navigate to the repository and run "npm install"
+Run "npm start"
+The website will run on "localhost:3000"
 
 
 Website:
