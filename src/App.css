@@ -2,6 +2,7 @@
   text-align: center;
 }
 
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -36,3 +37,26 @@
     transform: rotate(360deg);
   }
 }
+
+.getStarted{
+  background-color: rgb(10, 66, 169);
+  font-size: 30px;
+  padding: 14px 40px;
+  border-radius: 12px;
+  transition-duration: 0.4s;
+  border-color: azure;
+  align-items: center;
+  color:white;
+  margin-left: 33%;
+  margin-top:1%;
+}
+
+.getStarted:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  cursor: pointer;
+  margin-top: 2%;
+  
+}
+
+
