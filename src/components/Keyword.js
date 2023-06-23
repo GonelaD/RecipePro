@@ -331,7 +331,7 @@ const Keyword = () => {
     return(
         <div>
             {/* {console.log("selected",selectedItems)} */}
-            <h2 style={{textAlign:"center",position:"relative",marginTop:"100px"}}>Search For Recipe by Keyword</h2>
+            <h2 style={{textAlign:"center",position:"relative",marginTop:"30px"}}>Search For Recipe by Keyword</h2>
             <TextField onChange={(ele)=>setRecipe(ele.target.value)} style={{width:"680px",marginLeft:"30%"}} placeholder="for example : chicken pasta" InputProps={{
             startAdornment: <InputAdornment position="start"><SearchIcon /></InputAdornment>,
             endAdornment : <InputAdornment position="end"> <Button variant="contained" onClick={()=>getNewRecipes()}>Search</Button></InputAdornment>
@@ -361,8 +361,8 @@ const Keyword = () => {
                     </DialogContentText> */}
                 </DialogContent>
                 <DialogActions>
-                    <Button variant="contained" onClick={()=>handleAllergyApply(selectedItems)}>Apply</Button>
-                    <Button variant="contained" onClick={handleAllergyClose}>Cancel</Button>
+                    <Button variant="contained" color="success" onClick={()=>handleAllergyApply(selectedItems)}>Apply</Button>
+                    <Button variant="contained" color="error" onClick={handleAllergyClose}>Cancel</Button>
                 </DialogActions>
             </Dialog>
             </div>
@@ -385,8 +385,8 @@ const Keyword = () => {
                     
                 </DialogContent>
                 <DialogActions>
-                    <Button variant="contained" onClick={()=>handleDietApply(selectedItems)}>Apply</Button>
-                    <Button variant="contained" onClick={handleDietClose}>Cancel</Button>
+                    <Button variant="contained" color="success" onClick={()=>handleDietApply(selectedItems)}>Apply</Button>
+                    <Button variant="contained" color="error" onClick={handleDietClose}>Cancel</Button>
                 </DialogActions>
             </Dialog>
             </div>
@@ -416,8 +416,8 @@ const Keyword = () => {
                     </DialogContentText>
                 </DialogContent>
                 <DialogActions>
-                    <Button variant="contained" onClick={()=>handleCaloriesApply()}>Apply</Button>
-                    <Button variant="contained" onClick={handleCaloriesClose}>Cancel</Button>
+                    <Button variant="contained" color="success" onClick={()=>handleCaloriesApply()}>Apply</Button>
+                    <Button variant="contained" color="error" onClick={handleCaloriesClose}>Cancel</Button>
                 </DialogActions>
             </Dialog>
             </div>
@@ -459,7 +459,7 @@ const Keyword = () => {
                                             </Typography>
                                         </DialogContent>
                                         <DialogActions>
-                                            <Button variant="contained" onClick={()=>{
+                                            <Button variant="contained" color="success" onClick={()=>{
                                                 let event = {}
                                                 event.target = {}
                                                 event.target.name = item;
@@ -467,7 +467,7 @@ const Keyword = () => {
                                                 handleInsideNutrientsList(event,minValue,maxValue);
 
                                             }}>Apply</Button>
-                                            <Button variant="contained" onClick={()=>{
+                                            <Button variant="contained" color="error" onClick={()=>{
                                                 let event = {}
                                                 event.target = {}
                                                 event.target.name = item;
@@ -484,8 +484,8 @@ const Keyword = () => {
                         
                     </DialogContent>
                     <DialogActions>
-                        <Button variant="contained" onClick={()=>handleNutrientsApply(selectedItems)}>Apply</Button>
-                        <Button variant="contained" onClick={handleNutrientsClose}>Cancel</Button>
+                        <Button variant="contained" color="success" onClick={()=>handleNutrientsApply(selectedItems)}>Apply</Button>
+                        <Button variant="contained" color="error" onClick={handleNutrientsClose}>Cancel</Button>
                     </DialogActions>
                 </Dialog>
             </div>
@@ -502,7 +502,7 @@ const Keyword = () => {
                 )
             })}
           </div>
-        { showData && showData.length>0 && <div style={{position:"relative",marginLeft:"45%",marginTop:"1.5%"}}>
+        { showData && showData.length>0 && <div style={{position:"relative",marginLeft:"44%",marginTop:"0.5%"}}>
         <Pagination count={3} onChange={(ele,value)=>
             getPaginatedData(data,value-1)
         } />
@@ -521,10 +521,12 @@ const Keyword = () => {
             </Dialog>}
 
             {noRecipe && <Dialog open={noRecipe}>
-            <DialogTitle>Well...?</DialogTitle>
+            <DialogTitle>Umm...?</DialogTitle>
             <DialogContent>
                 <Typography>
-                    Seems like you didn't enter any dish. We will show random food options. Given in a dish if you want to change it,
+                    Seems like you didn't enter any dish. We will show random food options. 
+                    <br/>
+                    If you want to change this, give in a dish,
                     else enjoy these random dishes.
                 </Typography>
             </DialogContent>

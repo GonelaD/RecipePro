@@ -20,7 +20,7 @@ function App() {
       {showMainPage && <div style={myStyle}>
      <div style={{alignContent:"center",marginTop:"19%",position:"absolute",marginLeft:"10%",width:"40%"}}>
       <Typography>
-        <h1 style={{textAlign:"center",color:"white",fontStyle:"italic",fontSize:"40px"}}>RecipePro</h1>
+        <h1 style={{textAlign:"center",color:"white",fontStyle:"italic",fontSize:"40px"}}>Grocery Pro</h1>
         
           <p style={{color:"white",marginTop:"-4%",marginLeft:"2%"}}>What to buy? Search Recipes and plan your groceries accordingly. Use this as recipe finder or grocery planner.
           With an extensive collection of recipes spanning various cuisines, our app is tailored to cater to your dietary preferences, allergies, and health goals. Say goodbye to the hassle of planning meals and grocery shopping blindly! </p>
