@@ -1,70 +1,59 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+“Grocery Pro: Your Ultimate Grocery Companion"
 
-## Available Scripts
 
-In the project directory, you can run:
+GroceryPro is a versatile and user-friendly web application designed to revolutionize your grocery shopping and cooking experience. With an extensive collection of recipes spanning various cuisines, our app is tailored to cater to your dietary preferences, allergies, and health goals. Say goodbye to the hassle of planning meals and grocery shopping blindly!
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Key Features:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Grocery Planning Made Easy: Each recipe includes a comprehensive list of ingredients required, making it effortless to plan your grocery shopping. GroceryPro also offers the option to create personalized shopping lists, ensuring you never miss a vital item during your next store visit.
+Comprehensive Recipe Library: Explore a vast repository of recipes from around the world, featuring diverse cuisines such as Italian, Mexican, Indian, Chinese, and more. Whether you're a seasoned chef or a novice in the kitchen, GroceryPro has something for everyone.
+Customized Dietary Options: Specify your dietary requirements, including vegetarian, vegan, gluten-free, dairy-free, and more. GroceryPro intelligently filters recipes based on your preferences, ensuring you find dishes that align with your lifestyle.
+Allergy-Friendly Alternatives: Inform GroceryPro about your food allergies or sensitivities, and the web app will automatically suggest suitable ingredient substitutions for each recipe. Enjoy peace of mind knowing that your health and well-being are prioritized.
+Calorie and Nutrient Tracking: Stay on track with your health and fitness goals by accessing detailed nutritional information for every recipe. GroceryPro provides calorie counts, empowering you to make informed decisions about your meal choices.
+ User-Friendly Interface: GroceryPro boasts an intuitive and visually appealing interface, making it a breeze to navigate through recipes, ingredients, and dietary preferences. Enjoy a seamless and enjoyable experience.
 
-### `npm test`
+Experience the joy of cooking with GroceryPro, your ultimate kitchen companion. From discovering new flavors to planning your grocery shopping efficiently, our app empowers you to create delicious meals while adhering to your dietary restrictions and health goals. Visit GroceryPro today and unlock a world of culinary possibilities!  https://recipe-pro.vercel.app/
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Hosted on vercel
 
-### `npm run build`
+How to Run on Local:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Clone the repository.
+Navigate to the repository and run "npm install"
+Run "npm start"
+The website will run on "localhost:3000"
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Development:
 
-### `npm run eject`
+To simplify your grocery shopping experience while ensuring your meals align with your dietary restrictions and health goals. With GroceryPro, planning your shopping list becomes a breeze, thanks to its seamless integration with a vast recipe database and customizable dietary options. Say goodbye to the frustration of aimlessly wandering through aisles and hello to an organized and efficient grocery shopping journey.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Main Library: @mui/material, axios
+Title page: Title along with a little description of what the app is for, with a get started button that acts as an entry point to the website.
+Main page: Search for recipes by keywords, for example, chicken pasta, etc. 
+It calls to the public API: https://developer.edamam.com/edamam-docs-recipe-api
+Which gives the available recipes, the website shows only 10 recipes, to not overwhelm the user with the data.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Each recipe is shown in card view, showing the image, along with allergy and diet restrictions to give a preview. Each card has an info button that shows ingredients and recipes.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Filters like allergies, diets, calories, and nutrients are added to get recipes with added constraints. 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Testing:
 
-## Learn More
+Manual Testing: Ran manual tests to check for the functionality of each feature. And made changes accordingly.
+Added errors to handle edge cases like no recipe, and failed API calls.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Automated Testing: Unit testing using jest. Please note that, because this is a trial project, didn’t perform unit testing.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Future Ideas:
 
-### Code Splitting
+To add more features, better UI to handle more functionality.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+Website:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Website Link: https://recipe-pro.vercel.app/
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
